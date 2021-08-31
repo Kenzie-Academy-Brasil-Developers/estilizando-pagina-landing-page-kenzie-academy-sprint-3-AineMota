@@ -106,23 +106,26 @@ main{}
     font-size: 21px;
     text-align: center;
     padding: 15px;
-
+    font-family: 'Montserrat';
 }
 .secaoDestaqueFormulario{
     top: 15%;
     position: relative;
     text-align: center;
     padding: 15px;
+    
 }
 .secaoDestaqueFormulario__button{
     font-size: 13px;
     background-color: #007aff;
     padding: 10px 0 10px;
-    border:none;
     width: 20%;
     margin-left: 0%;
     outline: 0;
     color: #fff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .secaoDestaqueFormulario__email{
     padding: 10px 0 10px;
@@ -131,6 +134,8 @@ main{}
     margin-right: 0%;
     width: 50%;
     outline: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 /*SEÇÃO SOBRE*/
 .secaoSobre h2{
@@ -169,7 +174,7 @@ main{}
 .menu a{
     text-decoration: none;
     color: #fff;
-    text-align:right ;
+    
 }
 .menuLista{
     list-style: none;
@@ -200,6 +205,14 @@ main{}
         i.fi-rr-align-justify{
             max-width: 50px;
             width: 10vw;   
+        }
+        main{
+            text-align: center;
+        }
+        .secaoDestaque h2{
+            font-size: 43px;
+            text-align: center;
+            width: 100%;
         }
     }
   

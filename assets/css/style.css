@@ -202,9 +202,12 @@ main{}
             max-width: 70px;
             width: 15vw;
         }
-        i.fi-rr-align-justify{
+        i .fas {
             max-width: 50px;
-            width: 10vw;   
+            width: 50vw;
+        }
+        .menuLista{
+            display: none;
         }
         main{
             text-align: center;
@@ -216,5 +219,12 @@ main{}
         }
     }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        .menuLista{
+            display: inline-block;
+        }
+        .fas fa-align-justify{
+            opacity: 0;
+        }
+    }
 /* MEDIA QUERIES */

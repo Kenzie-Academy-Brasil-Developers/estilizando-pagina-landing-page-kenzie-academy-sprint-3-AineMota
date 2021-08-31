@@ -202,10 +202,7 @@ main{}
             max-width: 70px;
             width: 15vw;
         }
-        i .fas {
-            max-width: 50px;
-            width: 50vw;
-        }
+
         .menuLista{
             display: none;
         }

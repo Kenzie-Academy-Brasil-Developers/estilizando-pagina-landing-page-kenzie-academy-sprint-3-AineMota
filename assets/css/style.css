@@ -92,8 +92,8 @@ main{}
 .secaoDestaque{
     background-color: #00043e;
     height: 80vh;
-    text-align: center;
-    
+    text-align: justify;
+    color: #fff; 
 }
 .secaoDestaque h2{
     top: 15%;
@@ -104,25 +104,33 @@ main{}
     top: 15%;
     position: relative;
     font-size: 21px;
+    text-align: center;
+    padding: 15px;
+
 }
 .secaoDestaqueFormulario{
     top: 15%;
     position: relative;
-    
+    text-align: center;
+    padding: 15px;
 }
 .secaoDestaqueFormulario__button{
     font-size: 13px;
     background-color: #007aff;
     padding: 10px 0 10px;
     border:none;
-    width: 40%;
+    width: 20%;
+    margin-left: 0%;
+    outline: 0;
+    color: #fff;
 }
 .secaoDestaqueFormulario__email{
     padding: 10px 0 10px;
-    background-color: #FFF;
+    background-color: #fff;
     border:none;
+    margin-right: 0%;
     width: 50%;
-
+    outline: 0;
 }
 /*SEÇÃO SOBRE*/
 .secaoSobre h2{
@@ -157,6 +165,11 @@ main{}
 .menu{
     float: right;
     font: 13px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    text-align:right ;
 }
 .menuLista{
     list-style: none;

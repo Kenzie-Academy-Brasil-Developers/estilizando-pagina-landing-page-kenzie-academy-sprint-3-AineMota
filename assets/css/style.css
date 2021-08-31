@@ -25,7 +25,9 @@ family=Lato -> Títulos, textos
 */
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 /* FONTS */
 
 /* VARIÁVEIS */
@@ -67,11 +69,18 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    background-color: #00043e;
+}
 /* HEADER */
   
 /* FOOTER */
@@ -80,6 +89,79 @@ footer{}
 
 /* INICIAL */
 main{}
+.secaoDestaque{
+    background-color: #00043e;
+    height: 80vh;
+    text-align: center;
+    
+}
+.secaoDestaque h2{
+    top: 15%;
+    position: relative;
+    font-size: 63px;
+}
+.secaoDestaque p{
+    top: 15%;
+    position: relative;
+    font-size: 21px;
+}
+.secaoDestaqueFormulario{
+    top: 15%;
+    position: relative;
+    
+}
+.secaoDestaqueFormulario__button{
+    font-size: 13px;
+    background-color: #007aff;
+    padding: 10px 0 10px;
+    border:none;
+    width: 40%;
+}
+.secaoDestaqueFormulario__email{
+    padding: 10px 0 10px;
+    background-color: #FFF;
+    border:none;
+    width: 50%;
+
+}
+/*SEÇÃO SOBRE*/
+.secaoSobre h2{
+    font-size: 24px ;
+}
+.secaoSobre p{
+    font-size: 19px;
+}
+/*SEÇÃO CURSOS*/
+.secaoCursos h2{
+    font-size: 19PX ;
+}
+.secaoCursos p{
+    font-size: 15px;
+}
+/*SEÇÃO CALENDÁRIO*/
+.calendario-data{
+    font-size: 36px;
+}
+.calendario h3{
+    font-size: 19px;
+}
+.calendario p{
+    font-size: 15px;
+}
+.calendario-data-rodape__button{
+    font-size: 32px;
+}
+.large-container__logo{
+    float: left;
+}
+.menu{
+    float: right;
+    font: 13px;
+}
+.menuLista{
+    list-style: none;
+
+}
 /* INICIAL */
 
 /* EXTRAS */
@@ -97,7 +179,16 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
+        figure{
+            max-width: 70px;
+            width: 15vw;
+        }
+        i.fi-rr-align-justify{
+            max-width: 50px;
+            width: 10vw;   
+        }
+    }
   
     @media screen and (min-width: 800px) {}
 /* MEDIA QUERIES */

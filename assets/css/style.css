@@ -25,11 +25,16 @@ family=Lato -> Títulos, textos
 */
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --main-text: #303030;
+    --details-text: #818181;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -67,11 +72,19 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header{
+    background-color: #00043e;
+}
 /* HEADER */
   
 /* FOOTER */
@@ -80,6 +93,103 @@ footer{}
 
 /* INICIAL */
 main{}
+.secaoDestaque{
+    background-color: #00043e;
+    height: 80vh;
+    text-align: justify;
+    color: #fff; 
+}
+.secaoDestaque h2{
+    top: 15%;
+    position: relative;
+    font-size: 63px;
+}
+.secaoDestaque p{
+    top: 15%;
+    position: relative;
+    font-size: 21px;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Montserrat';
+}
+.secaoDestaqueFormulario{
+    top: 15%;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    
+}
+.secaoDestaqueFormulario__button{
+    font-size: 13px;
+    background-color: #007aff;
+    padding: 10px 0 10px;
+    width: 20%;
+    margin-left: 0%;
+    outline: 0;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.secaoDestaqueFormulario__email{
+    padding: 10px 0 10px;
+    background-color: #fff;
+    border:none;
+    margin-right: 0%;
+    width: 50%;
+    outline: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/*SEÇÃO SOBRE*/
+.secaoSobre h2{
+    font-size: 24px ;
+    padding: 10vh;
+    color: var(--main-text);
+}
+.secaoSobre p{
+    font-size: 19px;
+    color: var(--main-text);
+}
+.secaoSobre span{
+    color: var(--details-text);
+}
+/*SEÇÃO CURSOS*/
+.secaoCursos h2{
+    font-size: 19PX ;
+}
+.secaoCursos p{
+    font-size: 15px;
+}
+/*SEÇÃO CALENDÁRIO*/
+.calendario-data{
+    font-size: 36px;
+}
+.calendario h3{
+    font-size: 19px;
+}
+.calendario p{
+    font-size: 15px;
+}
+.calendario-data-rodape__button{
+    font-size: 32px;
+}
+.large-container__logo{
+    float: left;
+}
+.menu{
+    float: right;
+    font: 13px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.menuLista{
+    list-style: none;
+
+}
 /* INICIAL */
 
 /* EXTRAS */
@@ -97,7 +207,38 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px) {
+        figure{
+            max-width: 70px;
+            width: 15vw;
+        }
+
+        .menuLista{
+            display: none;
+        }
+        main{
+            text-align: center;
+        }
+        .secaoDestaque h2{
+            font-size: 43px;
+            text-align: center;
+            width: 100%;
+        }
+        .secaoSobre{
+            text-align: left;
+            padding: 10vw;
+        }
+        .secaoSobre span{
+            padding: 10vw;
+        }
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+        .menuLista{
+            display: inline-block;
+        }
+        .fas fa-align-justify{
+            opacity: 0;
+        }
+    }
 /* MEDIA QUERIES */

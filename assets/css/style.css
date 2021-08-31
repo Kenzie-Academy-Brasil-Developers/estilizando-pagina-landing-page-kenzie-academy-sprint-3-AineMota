@@ -93,6 +93,10 @@ footer{}
 
 /* INICIAL */
 main{}
+img{
+    width: 75vw;
+    max-width: 400px;
+}
 .secaoDestaque{
     background-color: #00043e;
     height: 80vh;
@@ -154,6 +158,24 @@ main{}
 .secaoSobre span{
     color: var(--details-text);
 }
+.secaoSobre button{
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    color: var(--main-text);
+}
+.secaoSobre figcaption{
+    color: #fff;
+}
+.img--py{
+    max-width: 700px;
+    width: 50vw;
+}
+.img--js{
+    max-width: 200px;
+    width: 35vw;
+}
 /*SEÇÃO CURSOS*/
 .secaoCursos h2{
     font-size: 19PX ;
@@ -190,6 +212,7 @@ main{}
     list-style: none;
 
 }
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -208,17 +231,10 @@ main{}
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {
-        figure{
+        .large-container__logo img{
             max-width: 70px;
-            width: 15vw;
+            width: 10vw;
         }
-<<<<<<< HEAD
-        i .fas {
-            max-width: 50px;
-            width: 50vw;
-        }
-=======
->>>>>>> Aine2
         .menuLista{
             display: none;
         }
@@ -234,8 +250,14 @@ main{}
             text-align: left;
             padding: 10vw;
         }
-        .secaoSobre span{
-            padding: 10vw;
+        .secaoSobre p{
+            padding-bottom: 10vw;
+        }
+        .img--js{
+            align-items: center;
+        }
+        .img--py{
+            align-items: center;
         }
     }
   

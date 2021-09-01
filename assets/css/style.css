@@ -268,7 +268,11 @@ main{
 /* INICIAL */
 
 /* EXTRAS */
-
+.secaoContato h2 {
+    font-size: 15px;
+    color: var(--main-font);
+    text-transform: uppercase ;
+}
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}
 ::-webkit-scrollbar-button{}

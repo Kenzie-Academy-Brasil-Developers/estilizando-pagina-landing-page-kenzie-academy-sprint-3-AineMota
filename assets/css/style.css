@@ -143,54 +143,73 @@ main{}
 }
 .secaoSobre p{
     font-size: 19px;
+    color: var(--main-text);
+}
+.secaoSobre span{
+    color: var(--details-text);
+}
+.secaoSobre button{
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    color: var(--main-text);
+}
+.secaoSobre figcaption{
+    color: #fff;
+}
+.flex-col-list ul{
+    color: var(--details-text);
+    list-style:disc;
+}
+.img--py{
+    max-width: 700px;
+    width: 75vw;
+    margin: 15vw 0;
+}
+.img--js{
+    max-width: 200px;
+    width: 35vw;
+    margin: 15vw 0;
 }
 /*SEÇÃO CURSOS*/
 .secaoCursos h2{
     font-size: 19PX ;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-}
-.secaoCursos h3{
-    display: flex;
-    justify-content: center;
+   
 }
 .secaoCursos p{
     font-size: 15px;
-    display: flex;
-    justify-content: center;
+
 }
 
 .secaoCursos img{
-    max-width:150px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    margin: 20px;
-
-}
-.secaoCursos{
+    max-width: 200px;
+    width: 35vw;
+    margin: 15vw 0;
     display: flex;
-    flex-direction: row;
-   
-
-}
-.secaoCursos ul{
+    align-self: center;
     
-
 }
 
-.secaoCursos ul li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.secaoCursos ul li p{
+    color: #818181;
+    font-size: 15px;
+    padding: 10px;
     
-
 }
-
 
 
 /*SEÇÃO CALENDÁRIO*/
+
+.secaoCalendar h2{
+    font-size: 19px;
+    padding: 10px;
+}
+.secaoCalendar p{
+    font-size: 15px;
+}
+
 .calendario-data{
     font-size: 36px;
 }
@@ -241,6 +260,7 @@ main{}
             max-width: 70px;
             width: 15vw;
         }
+
         .menuLista{
             display: none;
         }
@@ -252,7 +272,61 @@ main{}
             text-align: center;
             width: 100%;
         }
+        .secaoCursos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+        
+        .secaoCursos h2{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .secaoCursos p{
+            display: flex;
+            justify-content: center;   
+        }
+        .secaoCursos h3{
+            
+        }
+        
+        .secaoCursos ul li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            
+        }
+        .secaoCalendar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .secaoCalendar h2{
+            display: flex;
+            justify-content: center;
+            
+        }
+    
+        .secaoCalendar p{
+            display: flex;
+            justify-content: center;
+        }
+        .calendario-data{
+            background-color: #00043e;
+            
+        }
+        .calendario-data ul li {
+            background-color: #fc9; 
+            border:20em solid #00043e; 
+            padding: 15px;
+           
+        }
+    
     }
+
   
     @media screen and (min-width: 800px) {
         .menuLista{

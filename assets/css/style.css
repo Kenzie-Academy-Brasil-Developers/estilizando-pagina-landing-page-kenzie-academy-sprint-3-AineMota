@@ -175,6 +175,7 @@ main{}
     text-align: center;
 }
 
+
 .secaoCursos ul li p{
     color: #818181;
     font-size: 15px;
@@ -308,6 +309,7 @@ main{}
         }
     
     }
+
   
     @media screen and (min-width: 800px) {
         .menuLista{

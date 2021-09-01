@@ -199,11 +199,9 @@ img{
 }
 
 .secaoCursos img{
-    max-width:150px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    margin: 20px;
+    max-width: 700px;
+    width: 75vw;
+    margin: 15vw 0;
 
 }
 .secaoCursos{
@@ -222,7 +220,14 @@ img{
     flex-direction: column;
     justify-content: center;
     
-
+    
+    
+}
+.secaoCursos ul li p{
+    color: #818181;
+    font-size: 15px;
+    padding: 10px;
+    
 }
 
 

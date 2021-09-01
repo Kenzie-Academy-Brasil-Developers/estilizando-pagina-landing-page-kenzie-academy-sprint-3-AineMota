@@ -93,6 +93,10 @@ footer{}
 
 /* INICIAL */
 main{}
+img{
+    width: 75vw;
+    max-width: 400px;
+}
 .secaoDestaque{
     background-color: #00043e;
     height: 80vh;
@@ -144,7 +148,6 @@ main{}
 /*SEÇÃO SOBRE*/
 .secaoSobre h2{
     font-size: 24px ;
-    padding: 10vh;
     color: var(--main-text);
 }
 .secaoSobre p{
@@ -153,6 +156,30 @@ main{}
 }
 .secaoSobre span{
     color: var(--details-text);
+}
+.secaoSobre button{
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    color: var(--main-text);
+}
+.secaoSobre figcaption{
+    color: #fff;
+}
+.flex-col-list ul{
+    color: var(--details-text);
+    list-style:disc;
+}
+.img--py{
+    max-width: 700px;
+    width: 75vw;
+    margin: 15vw 0;
+}
+.img--js{
+    max-width: 200px;
+    width: 35vw;
+    margin: 15vw 0;
 }
 /*SEÇÃO CURSOS*/
 .secaoCursos h2{
@@ -229,6 +256,7 @@ main{}
     list-style: none;
 
 }
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -247,11 +275,10 @@ main{}
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {
-        figure{
+        .large-container__logo img{
             max-width: 70px;
-            width: 15vw;
+            width: 10vw;
         }
-
         .menuLista{
             display: none;
         }
@@ -263,13 +290,36 @@ main{}
             text-align: center;
             width: 100%;
         }
+        .secaoSobre h2{
+            font-size: 24px;
+        }
         .secaoSobre{
             text-align: left;
-            padding: 10vw;
+            padding: 70px;
+            line-height: 8vw;
         }
-        .secaoSobre span{
-            padding: 10vw;
+        .secaoSobre li{
+            font-size: 19px;
         }
+        .secaoSobre p {
+            margin-bottom: 10vw ;
+            font-size: 19px;
+        }
+        .subs{
+            margin-top: 10vw;
+
+        }
+        .flex-col-list{
+           position: relative;
+           text-align: center;
+           bottom: 30vw;
+
+        }
+        .flex-col-list ul{
+            padding: 10vw;
+            text-align: left;
+        }
+
     }
   
     @media screen and (min-width: 800px) {

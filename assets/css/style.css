@@ -157,6 +157,7 @@ main{}
     
 }
 
+
 .secaoCursos ul li p{
     color: #818181;
     font-size: 15px;
@@ -164,7 +165,7 @@ main{}
     
 }
 
-/*SEÇÃO CALENDÁRIO*/
+/* SEÇÃO CALENDÁRIO*/
 .secaoCalendar h2{
     font-size: 19px;
     padding: 10px;
@@ -292,6 +293,7 @@ main{}
         }
     
     }
+
   
     @media screen and (min-width: 800px) {
         .menuLista{

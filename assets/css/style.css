@@ -148,6 +148,59 @@ main{
     border-top-left-radius: 5px;
 }
 /*SEÇÃO SOBRE*/
+.secaoSobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+.flex-col{
+    max-width: 100vw;
+}
+.flex-col h2{
+    color: var(--main-font);
+    padding:10vw;
+    text-align: left;
+    margin-top: 10vw;
+} 
+.secaoSobre p{
+    color: var(--main-font);
+    padding:10vw;
+    text-align: left;
+}
+.secaoSobre span{
+    color: var(--details-font);
+}
+.subs{
+    margin-top: 15vw;
+    font-size: 14px;
+    padding: 8px;
+    color: var(--main-font);
+    border:none;
+
+}
+ .img--py{
+    margin-top: 20vw;
+    width: 80vw;
+}
+.img--js{
+    margin-top: 20vw;
+    width: 45vw;
+}
+.secaoSobre figcaption{
+    display: none;
+}
+.secaoSobre ul {
+    padding: 20vw;
+    text-align: left;
+    color: var(--details-font);
+    list-style: square;
+}
+.flex-col-list h2{
+    margin-left: 25vw ;
+    width: 50vw;
+}
+/*SEÇÃO CURSOS*/
 .secaoCursos h2{
     font-size: 19PX ;
     font-weight: bold;
@@ -287,11 +340,6 @@ main{
 
   
     @media screen and (min-width: 800px) {
-        .menuLista{
-            display: inline-block;
-        }
-        .fas fa-align-justify{
-            opacity: 0;
-        }
+
     }
 /* MEDIA QUERIES */

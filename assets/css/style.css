@@ -138,41 +138,6 @@ main{}
     border-top-left-radius: 5px;
 }
 /*SEÇÃO SOBRE*/
-.secaoSobre h2{
-    font-size: 24px ;
-}
-.secaoSobre p{
-    font-size: 19px;
-    color: var(--main-text);
-}
-.secaoSobre span{
-    color: var(--details-text);
-}
-.secaoSobre button{
-    padding: 10px;
-    border: none;
-    background-color: #fff;
-    font-size: 14px;
-    color: var(--main-text);
-}
-.secaoSobre figcaption{
-    color: #fff;
-}
-.flex-col-list ul{
-    color: var(--details-text);
-    list-style:disc;
-}
-.img--py{
-    max-width: 700px;
-    width: 75vw;
-    margin: 15vw 0;
-}
-.img--js{
-    max-width: 200px;
-    width: 35vw;
-    margin: 15vw 0;
-}
-/*SEÇÃO CURSOS*/
 .secaoCursos h2{
     font-size: 19PX ;
     font-weight: bold;
@@ -192,6 +157,7 @@ main{}
     
 }
 
+
 .secaoCursos ul li p{
     color: #818181;
     font-size: 15px;
@@ -199,9 +165,7 @@ main{}
     
 }
 
-
-/*SEÇÃO CALENDÁRIO*/
-
+/* SEÇÃO CALENDÁRIO*/
 .secaoCalendar h2{
     font-size: 19px;
     padding: 10px;

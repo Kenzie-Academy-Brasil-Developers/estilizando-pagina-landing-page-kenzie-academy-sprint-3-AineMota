@@ -31,7 +31,10 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --main-font: #303030;
+    --details-font: #818181;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -78,8 +81,17 @@ h2{
 /* BODY */
   
 /* HEADER */
-header{
+.topo{
     background-color: #00043e;
+}
+.large-container__logo{
+    max-width: 70px;
+    width: 15vw;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menuLista{
+    display: none;
 }
 /* HEADER */
   
@@ -88,52 +100,50 @@ footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+main{
+    text-align: center;
+}
 .secaoDestaque{
     background-color: #00043e;
-    height: 80vh;
+    height: 55vh;
     text-align: justify;
     color: #fff; 
 }
 .secaoDestaque h2{
-    top: 15%;
-    position: relative;
-    font-size: 63px;
+    padding-top: 80px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    width: 100%;
 }
 .secaoDestaque p{
-    top: 15%;
-    position: relative;
     font-size: 21px;
     text-align: center;
     padding: 15px;
     font-family: 'Montserrat';
 }
 .secaoDestaqueFormulario{
-    top: 15%;
-    position: relative;
     text-align: center;
     padding: 15px;
-    
+    box-sizing: content-box;
 }
 .secaoDestaqueFormulario__button{
-    font-size: 13px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
     background-color: #007aff;
     padding: 10px 0 10px;
-    width: 20%;
-    margin-left: 0%;
-    outline: 0;
+    width: 25%;
     color: #fff;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 .secaoDestaqueFormulario__email{
+    font-size: 14px ;
     padding: 10px 0 10px;
     background-color: #fff;
     border:none;
-    margin-right: 0%;
-    width: 50%;
-    outline: 0;
+    width: 60%;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -220,22 +230,6 @@ main{}
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {
-        figure{
-            max-width: 70px;
-            width: 15vw;
-        }
-
-        .menuLista{
-            display: none;
-        }
-        main{
-            text-align: center;
-        }
-        .secaoDestaque h2{
-            font-size: 43px;
-            text-align: center;
-            width: 100%;
-        }
         .secaoCursos{
             display: flex;
             flex-direction: row;

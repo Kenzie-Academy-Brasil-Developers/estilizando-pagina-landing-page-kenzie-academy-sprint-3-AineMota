@@ -48,9 +48,6 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 img{
     max-width: 800px;
 }
-div.flex{
-    display: flex;
-}
 div.full-container{
     width: 100%;
     max-width: 1850px;
@@ -87,7 +84,7 @@ h2{
 }
 .large-container__logo{
     max-width: 70px;
-    width: 15vw;
+    width:50px;
     margin-top: 15px;
     margin-left: 15px;
 }
@@ -148,6 +145,11 @@ main{
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
+i[class~='fas']{
+    padding: 5vw;
+    color: grey;
+    font-size: 30px;
+}
 /*SEÇÃO SOBRE*/
 .flex{
     display: flex;
@@ -185,10 +187,12 @@ div[class~="fig"]{
  .img--py{
     margin-bottom: 10vw;
     width: 80vw;
+    max-width: 600px;
 }
 .img--js{
     margin-bottom: 10vw;
     width: 45vw;
+    max-width: 300px;
 }
 .secaoSobre figcaption{
     display: none;
@@ -357,15 +361,16 @@ div[class~="fig"]{
     color: var(--details-font);
     line-height: var(--line-space);
 }
-input, textarea{
+.secaoContato input,.secaoContato textarea{
     font-size: 14px;
     border: none;
     width: 100vw;
-    max width: 400px;
-    padding: 6vw;
+    max-width: 400px;
+    padding : 6vw;
 }
 .user-info input[type="submit"]{
     text-align: right;
+    cursor: pointer;
 }
 label{
     display: none;
@@ -389,15 +394,66 @@ a{
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px) {
 
-    }
 
   
     @media screen and (min-width: 800px) {
-        .menuLista{
-            display: inline-block;
+        .large-container{
+            height: 5vw;
+            background-color: #00043e;
+            opacity: 100%;
         }
-        .fas fa-align-justify{
-            opacity: 0;
+        .secaoDestaque{
+            background-image: url(/assets/img/background-destaque.webp);
+            padding-top: 10px;
+            height: 40vw;
+        }
+        .secaoDestaque h2{
+            font-size: 63px;
+            font-weight: 500;
+            padding-top: 10vw;
+        }
+        .secaoDestaqueFormulario{
+            max-width: 60vw;
+            margin-left: 20vw;
+        }
+        .menu ul{
+            display: inline-block;
+            margin-right: 20vw;
+            font-family: 'Lato', sans-serif;
+        }
+        .menu ul li{
+            float: left;
+            padding: 20px;
+        }
+        .menu ul li:hover{
+            background-color: rgb(76, 63, 192);
+            cursor: pointer;
+        }
+        i[class~='fas']{
+            display: none;
+        }
+        .flex{
+            flex-direction: column;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .flex-col{
+            padding: 5vw;
+            margin-top: 10vw;   
+        }
+        .resolv-problem{
+            display: flex;
+        }
+        .flex-col-list h2{
+            margin-top: 10vw;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        .flex-col-list{
+            margin-left: 15vw;
+        }
+        .secaoSobre ul {
+            padding: 5vw;
         }
         .secaoCursos{
             display: flex;
@@ -468,7 +524,11 @@ a{
             font-size: 19px;
             text-align: center;
             margin: 65px auto 16px;
-
+        }
+        .secaoContato input,.secaoContato textarea{
+            font-size: 14px;
+            max-width: 500px;
+        }
 
     }
         

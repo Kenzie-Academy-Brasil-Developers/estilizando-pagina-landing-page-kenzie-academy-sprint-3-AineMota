@@ -34,6 +34,7 @@ family=Lato -> Títulos, textos
 :root{
     --main-font: #303030;
     --details-font: #818181;
+    --line-space: 30px;
 }
   
 /* GERAL */
@@ -148,14 +149,15 @@ main{
     border-top-left-radius: 5px;
 }
 /*SEÇÃO SOBRE*/
-.secaoSobre{
+.flex{
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 30px;
+    line-height: var(--line-space);
 }
 .flex-col{
     max-width: 100vw;
+    text-align: left;
 }
 .flex-col h2{
     color: var(--main-font);
@@ -269,9 +271,31 @@ main{
 
 /* EXTRAS */
 .secaoContato h2 {
-    font-size: 15px;
+    font-size: 30px;
+    font-weight: bolder;
     color: var(--main-font);
     text-transform: uppercase ;
+}
+.secaoContato-informacoes p, .form-input-model, footer{
+    color: var(--details-font);
+    line-height: var(--line-space);
+}
+input, textarea{
+    font-size: 14px;
+    border: none;
+    width: 100vw;
+    max width: 400px;
+    padding: 6vw;
+}
+.user-info input[type="submit"]{
+    text-align: right;
+}
+label{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: var(--details-font);
 }
 /* para estilizar a scrollbar */
 ::-webkit-scrollbar{}

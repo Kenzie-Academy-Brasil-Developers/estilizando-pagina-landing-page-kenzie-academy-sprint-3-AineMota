@@ -64,14 +64,14 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
           </p>
 
-          <span>Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span>
+          <span>Consectetur adipisicing elit 5 Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam.</span><br>
 
           <button class="subs">Subscribe</button>
 
         </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col fig">
 
           <figure class="img">
             <img class="img--py" src="assets/img/python.png" alt="python">
@@ -81,7 +81,7 @@
         </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="flex-col fig">
 
             <figure class="img">
               <img class="img--js" src="assets/img/JavaScript-logo.png" alt="Java Script">
@@ -212,7 +212,7 @@
     </section>
 
     <section class="secaoContato">
-
+      <h2>Contact</h2>
       <div class="flex">
 
         <!-- COLUNA LADO ESQUERDO -->
@@ -223,9 +223,9 @@
             <p>Contact us and we'll get back to you within 24 hours.</p>
             
             <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+              <li><i class="fas fa-map-marker-alt"></i>&nbsp&nbsp&nbsp<a href="#">Chicago, US</a> </li>
+              <li><i class="fas fa-mobile-alt"></i>&nbsp&nbsp&nbsp<a href="tel:001515151515">+00 1515151515</a></li>
+              <li><i class="fas fa-envelope"></i>&nbsp&nbsp<a href="malito:myemail@something.com">myemail@something.com</a></li>
             </ul>
 
           </div>
@@ -235,9 +235,9 @@
         <!-- COLUNA LADO DIRETO -->
         <div class="flex-col">
           
-          <h2>Contact</h2>
+        
           
-          <form action="">
+          <form class="user-info">
 
             <div class="form-input-model">
               <label for="nome">Nome</label>
@@ -251,7 +251,7 @@
 
             <div class="form-input-model">
               <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <textarea name="mensagem" id="mensagem" placeholder="Comment"></textarea>
             </div>
 
             <input type="submit" value="Send">

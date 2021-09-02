@@ -403,7 +403,7 @@ a{
             opacity: 100%;
         }
         .secaoDestaque{
-            background-image: url(/assets/img/background-destaque.webp);
+            background-image: url(../img/background-destaque.webp);
             padding-top: 10px;
             height: 40vw;
         }
@@ -531,5 +531,5 @@ a{
         }
 
     }
-        
+}    
         /* MEDIA QUERIES */
